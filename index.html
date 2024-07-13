@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Resizer Tool</h1>
+        <input type="file" id="imageInput" accept="image/*">
+        <div class="inputs">
+            <input type="number" id="width" placeholder="Width">
+            <input type="number" id="height" placeholder="Height">
+        </div>
+        <button id="resizeButton">Resize</button>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <div id="output">
+            <img id="resizedImage" src="#" alt="Resized Image" style="display:none;">
+            <a id="downloadLink" style="display:none;">Download</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
